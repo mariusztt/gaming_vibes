@@ -12,8 +12,8 @@ export default function Navbar() {
   return (
     <div className="container">
       <nav>
-        <Image src="/rupee.png" width={50} height={48} />
-        <h1>Gaming Vibes</h1>
+        <Image src="/images.jpeg" width={50} height={48} />
+        <h1>Mariusztt Guides</h1>
         {authReady && (
         <ul>
           <li><Link href="/"><a>Home</a></Link></li>
@@ -25,7 +25,7 @@ export default function Navbar() {
         )}
       </nav>
       <div className="banner">
-        <Image src="/banner.png" width={966} height={276} />
+        <Image src="/CSGO-Banner.png" width={966} height={276} />
       </div>
     </div>
   )
