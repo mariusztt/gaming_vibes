@@ -5,10 +5,35 @@ import Link from 'next/link'
 
 export default function Guides() {
 
-  
-    
+  const { user, authReady } = useContext(AuthContext)
+  const [guides, setGuides] = useState(null)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    if(authReady) {
 
     
+    fetch('/.netlify/functions/guides_dust2', user && {
+      headers: {
+        Authorization: 'Bearer ' + user.token.access_token
+      }
+    })
+    .then(res => {
+      if(!res.ok) {
+        throw Error("You must be logged in to view that content")
+      }
+      return res.json()
+    })
+    .then(data => {
+      setGuides(data)
+      setError(null)
+    })
+    .catch((err) => {
+      setError(err.message)
+      setGuides(null)
+    })
+  }
+  },[user, authReady])
 
   
     return (
@@ -89,9 +114,30 @@ export default function Guides() {
           </ul> 
         </div>
       </div>
+
+
+
+
+      <div className={styles.guides}>
+        
+      {!authReady && <div>Loading...</div>}
+
+      {error && (
+        <div className={styles.error}> { error }</div>
+      )}
+
+      {guides && guides.map(guide => (
+        <div key={guide.map} className={styles.card}>
+          <h3>{guide.map}</h3>
+          <h4>{guide.granade_type} {guide.place}</h4>
+        </div>
+        
+      ))}
+
+      </div> 
       </div>
     )
   
 
   
-      }
+}

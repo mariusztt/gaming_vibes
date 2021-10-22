@@ -27,3 +27,53 @@
   margin-top: 0;
   color: #777;
 }
+.menu {
+  width: 865px;
+  background-color: #1F2232;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 3rem;
+  position: relative;
+  height: 40px;
+  color: white;
+}
+.menu_a {
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 10px;
+  
+}
+.mapa {
+  position: relative;
+}
+.mapa ul {
+  width: 90px;
+  position: absolute;
+  list-style-type: none;
+  background-color: #373C58;
+  margin-top: 10px;
+  padding: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  display: none;
+}
+.mapa ul li {
+  padding: 0.5rem;
+}
+.mapa ul li:hover {
+  background-color: #272B3F;
+  border-radius: 0 0 5px 5px;
+}
+.mapa ul li a{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.mapa a:hover + ul,
+.mapa ul:hover {
+  display: block;
+}

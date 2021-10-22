@@ -24,6 +24,7 @@ export default function Navbar() {
         </ul>
         )}
       </nav>
+      
       <div className="banner">
         <Image src="/CSGO-Banner.png" width={966} height={276} />
       </div>
