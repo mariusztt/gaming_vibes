@@ -18,74 +18,74 @@ export default function Guides() {
         <div className={styles.mapa}>
           <a className={styles.menu_a}><Link href="/guides_mirage_page">Mirage</Link></a>
           <ul>
-            <li><a href="#">smoke</a></li>
-            <li><a href="#">flash</a></li>
-            <li><a href="#">molotov</a></li>
-            <li><a href="#">nade</a></li>
+            <li><a><Link href="/grenade_pages/m_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/m_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/m_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/m_nade">nade</Link></a></li>
           </ul>  
           
         </div>
         <div className={styles.mapa}>
         <a className={styles.menu_a}><Link href="/guides_inferno_page">Inferno</Link></a>
           <ul>
-            <li><a href="#">smoke</a></li>
-            <li><a href="#">flash</a></li>
-            <li><a href="#">molotov</a></li>
-            <li><a href="#">nade</a></li>
+            <li><a><Link href="/grenade_pages/i_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/i_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/i_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/i_nade">nade</Link></a></li>
           </ul> 
         </div>
         <div className={styles.mapa}>
         <a className={styles.menu_a}><Link href="/guides_dust2_page">Dust II</Link></a>
           <ul>
-            <li><a href="#">smoke</a></li>
-            <li><a href="#">flash</a></li>
-            <li><a href="#">molotov</a></li>
-            <li><a href="#">nade</a></li>
+            <li><a><Link href="/grenade_pages/d_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/d_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/d_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/d_nade">nade</Link></a></li>
           </ul> 
         </div>
         <div className={styles.mapa}>
         <a className={styles.menu_a}><Link href="/guides_overpass_page">Overpass</Link></a>
           <ul>
-            <li><a href="#">smoke</a></li>
-            <li><a href="#">flash</a></li>
-            <li><a href="#">molotov</a></li>
-            <li><a href="#">nade</a></li>
+            <li><a><Link href="/grenade_pages/o_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/o_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/o_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/o_nade">nade</Link></a></li>
           </ul> 
         </div>
         <div className={styles.mapa}>
         <a className={styles.menu_a}><Link href="/guides_nuke_page">Nuke</Link></a>
           <ul>
-            <li><a href="#">smoke</a></li>
-            <li><a href="#">flash</a></li>
-            <li><a href="#">molotov</a></li>
-            <li><a href="#">nade</a></li>
+            <li><a><Link href="/grenade_pages/n_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/n_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/n_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/n_nade">nade</Link></a></li>
           </ul> 
         </div>
         <div className={styles.mapa}>
         <a className={styles.menu_a}><Link href="/guides_train_page">Train</Link></a>
           <ul>
-            <li><a href="#">smoke</a></li>
-            <li><a href="#">flash</a></li>
-            <li><a href="#">molotov</a></li>
-            <li><a href="#">nade</a></li>
+            <li><a><Link href="/grenade_pages/t_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/t_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/t_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/t_nade">nade</Link></a></li>
           </ul> 
         </div>
         <div className={styles.mapa}>
         <a className={styles.menu_a}><Link href="/guides_vertigo_page">Vertigo</Link></a>
           <ul>
-            <li><a href="#">smoke</a></li>
-            <li><a href="#">flash</a></li>
-            <li><a href="#">molotov</a></li>
-            <li><a href="#">nade</a></li>
+            <li><a><Link href="/grenade_pages/v_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/v_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/v_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/v_nade">nade</Link></a></li>
           </ul> 
         </div>
         <div className={styles.mapa}>
         <a className={styles.menu_a}><Link href="/guides_ancient_page">Ancient</Link></a>
           <ul>
-            <li><a href="#" >smoke</a></li>
-            <li><a href="#" >flash</a></li>
-            <li><a href="#" >molotov</a></li>
-            <li><a href="#" >nade</a></li>
+            <li><a><Link href="/grenade_pages/a_smoke">smoke</Link></a></li>
+            <li><a><Link href="/grenade_pages/a_flash">flash</Link></a></li>
+            <li><a><Link href="/grenade_pages/a_molotov">molotov</Link></a></li>
+            <li><a><Link href="/grenade_pages/a_nade">nade</Link></a></li>
           </ul> 
         </div>
       </div>

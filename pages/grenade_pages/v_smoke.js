@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
-import styles from '../styles/Guides.module.css'
-import AuthContext from '../stores/authContext'
+import styles from '../../styles/Guides.module.css'
+import AuthContext from '../../stores/authContext.js'
 import Link from 'next/link'
 
 export default function Guides() {
@@ -127,10 +127,13 @@ export default function Guides() {
       )}
 
       {guides && guides.map(guide => (
-        <div key={guide.map} className={styles.card}>
-          <h3>{guide.map}</h3>
-          <h4>{guide.granade_type} {guide.place}</h4>
-        </div>
+           
+            <div key={guide.map} className={styles.card}>
+            <h3>{guide.map}</h3>
+            <h4>{guide.granade_type} {guide.place}</h4>
+          </div>
+           
+        
         
       ))}
 
