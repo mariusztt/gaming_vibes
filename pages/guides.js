@@ -89,7 +89,7 @@ export default function Guides() {
           </ul> 
         </div>
       </div>
-      </div>
+      </div> 
     )
   
 
